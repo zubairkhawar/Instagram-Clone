@@ -1,6 +1,6 @@
-My Sign Up App
+Instagram Clone
 
 _______________
 
 
-<img width="265" alt="Screenshot 2024-03-26 at 12 14 08 AM" src="https://github.com/zubairkhawar/SignUp-Page-Java/assets/115324847/897187ad-bc56-4877-9efa-b98fc3f3e4c8">
+<img width="258" alt="Screenshot 2024-03-27 at 1 49 36 AM" src="https://github.com/zubairkhawar/Instagram-Clone/assets/115324847/3fb8f235-1a88-4bfd-b231-7b0e052a47b1">
