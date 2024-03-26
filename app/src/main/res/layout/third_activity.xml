@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/grey"
+        android:layout_centerHorizontal="true">
+
+        <!-- TopBar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Zubair Khawar"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/settingsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@color/grey"
+                android:src="@drawable/iconsettings" />
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Profile Details -->
+    <LinearLayout
+        android:id="@+id/profileAccountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBarLayout"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="14dp">
+
+            <ImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:paddingStart="10dp"
+                android:src="@drawable/profilepicture" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/profilePicture"
+                android:orientation="vertical"
+                android:layout_alignLeft="@id/profilePicture"
+                android:layout_below="@id/profilePicture"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/profileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zubair Khawar"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/profileBio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bio goes here..."
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- Account Details -->
+        <LinearLayout
+            android:id="@+id/accountDetailsLayout"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="3431"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Posts"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="6530"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Followers"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="217"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Following"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/editProfileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Edit Profile"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/profilegridshow"
+        android:layout_height="50dp"
+        android:layout_below="@id/profileAccountLayout"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/iconGrid"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/iconList"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/iconlocation"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/personblack"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilepictures"
+        android:layout_below="@id/profilegridshow">
+
+    <!-- Grid Show -->
+    <LinearLayout
+        android:id="@+id/gridContainer"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/macbook2132midnight"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:padding="2dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/macbook2132spacegray"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:padding="2dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/macbook2132spacegray"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:padding="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/airpods2max2pink"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:padding="2dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/macbook2132spacegray"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:padding="2dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/airpods2max2pink"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:padding="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Bottom Navigation -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilepictures">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/homeicon"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/search"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/camera"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/heartblack"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:id="@+id/usericon"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/personblack"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
